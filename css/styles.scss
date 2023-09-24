@@ -173,7 +173,8 @@ h1 {
 
   &-image {
     width: 8rem;
-    border-radius: $border-radius; 
+    border-radius: $border-radius;
+    height: 100%; 
 
     @media (min-width: $breakpoint-desktop-md) {
       width: 10rem;

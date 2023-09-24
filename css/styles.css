@@ -104,7 +104,8 @@ h1 {
   align-items: stretch; }
 .book-image {
   width: 8rem;
-  border-radius: 6px; }
+  border-radius: 6px;
+  height: 100%; }
   @media (min-width: 1336px) {
     .book-image {
       width: 10rem; } }
