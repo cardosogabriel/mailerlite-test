@@ -1,0 +1,188 @@
+.body-14, .book-rating span, .book .type, .book-description {
+  font-size: 0.875rem; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s; }
+
+.first {
+  animation-delay: 0.4s; }
+
+.second {
+  animation-delay: 0.8s; }
+
+html {
+  font-family: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; }
+
+header {
+  margin-top: 3rem; }
+  header p {
+    margin-top: 1rem;
+    line-height: 1.625;
+    font-size: 1.25rem; }
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1;
+  letter-spacing: -.025em;
+  font-weight: 700; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem; } }
+  @media (min-width: 1336px) {
+    h1 {
+      font-size: 4rem; } }
+
+.container {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem; }
+  @media (min-width: 1336px) {
+    .container {
+      max-width: 80rem;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.highlighted-book {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #DFF6FC; }
+  @media (min-width: 1024px) {
+    .highlighted-book {
+      padding: 3rem 0;
+      background-color: transparent;
+      background-image: url(../img/highlighted-book-bg.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain; }
+      .highlighted-book .book {
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto; }
+        .highlighted-book .book-image-info {
+          gap: 2rem; }
+        .highlighted-book .book-image {
+          width: 15rem; }
+        .highlighted-book .book-title {
+          font-size: 1.875rem;
+          letter-spacing: -.025em; }
+        .highlighted-book .book-author, .highlighted-book .book-description {
+          font-size: 1rem; } }
+  @media (min-width: 1336px) {
+    .highlighted-book {
+      margin-top: 3rem; } }
+
+.books {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media (min-width: 1336px) {
+    .books {
+      margin-top: 4rem;
+      margin-bottom: 4rem; } }
+  .books .container {
+    display: grid;
+    gap: 2rem; }
+    @media (min-width: 640px) {
+      .books .container {
+        grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) {
+      .books .container {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (min-width: 1336px) {
+      .books .container {
+        gap: 3rem; } }
+
+.book-image-info {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch; }
+.book-image {
+  width: 8rem; }
+  .book-image img {
+    border-radius: 6px; }
+  @media (min-width: 1336px) {
+    .book-image {
+      width: 10rem; } }
+.book-info {
+  width: calc(100% - 9rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between; }
+  @media (min-width: 1336px) {
+    .book-info {
+      width: calc(100% - 11rem); } }
+  .book-info-header, .book-info-footer {
+    width: 100%; }
+.book-title {
+  font-size: 1.125rem;
+  line-height: 1.25em;
+  font-weight: 700; }
+  @media (min-width: 1336px) {
+    .book-title {
+      font-size: 1.25rem; } }
+.book-author {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+  margin-top: 0.25rem; }
+.book-rating {
+  margin-top: 0.5rem;
+  color: #46A1B0; }
+  .book-rating span {
+    color: black;
+    margin-left: 0.5rem; }
+.book-price-type {
+  margin-top: 0.5rem; }
+.book .price {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700; }
+  @media (min-width: 1336px) {
+    .book .price {
+      font-size: 1.5rem; } }
+.book .type {
+  margin-left: 0.25rem; }
+.book .btn {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .025em;
+  line-height: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  margin-top: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: 0.3s ease-in-out; }
+  .book .btn-primary {
+    border-color: #4F46E5;
+    background-color: #4F46E5;
+    color: white; }
+    .book .btn-primary:hover {
+      border-color: #251bc3;
+      background-color: #251bc3; }
+  .book .btn-outline-secondary {
+    border-color: #E5E7EB;
+    color: #4F46E5;
+    background-color: transparent; }
+    .book .btn-outline-secondary:hover {
+      border-color: #4F46E5;
+      background-color: rgba(224, 231, 255, 0.5); }
+.book-description {
+  margin-top: 1rem; }
+  .book-description.hide-on-small {
+    display: none; }
+    @media (min-width: 640px) {
+      .book-description.hide-on-small {
+        display: block; } }
+  @media (min-width: 640px) {
+    .book-description.show-on-small {
+      display: none; } }
