@@ -103,9 +103,8 @@ h1 {
   gap: 1rem;
   align-items: stretch; }
 .book-image {
-  width: 8rem; }
-  .book-image img {
-    border-radius: 6px; }
+  width: 8rem;
+  border-radius: 6px; }
   @media (min-width: 1336px) {
     .book-image {
       width: 10rem; } }
@@ -186,3 +185,5 @@ h1 {
   @media (min-width: 640px) {
     .book-description.show-on-small {
       display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
